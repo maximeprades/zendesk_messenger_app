@@ -2,10 +2,10 @@
   <a href="#" class="close" data-dismiss="alert">&times;</a>
 
   <p class="senderName">
-    {{senderName}}
+    {{from}}
   </p>
 
   <p class="messageBody">
-    {{{text}}}
+    {{{message}}}
   </p>
 </li>

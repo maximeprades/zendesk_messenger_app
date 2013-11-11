@@ -1,2 +1,5 @@
-
-{{activeUsers}}
+<select class='targetUser'>
+  {{#each activeUsers}}
+    <option value='{{this}}'>{{this}}</option>
+  {{/each}}
+</select>

@@ -1,0 +1,13 @@
+<div class='activeUsers'>{{spinner}}</div>
+
+<ul id="messages">
+</ul>
+
+<label for="message">
+  Message
+  <textarea name="message" class="message"></textarea>
+</label>
+
+<div>
+  <button class="btn-primary" id="send-msg">Send</button>
+</div>
