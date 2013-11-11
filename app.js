@@ -2,7 +2,9 @@
 
   return {
     events: {
-      'app.activated': 'sayPresence'
+      'app.activated'     :  'sayPresence',
+      'activeUsers.done'  :  'switchToUserList',
+      'activeUsers.fail'  :  'switchToError'
     },
 
     requests: {
@@ -33,8 +35,19 @@
       setInterval (function() {
         this.ajax('presence');
         this.ajax('activeUsers');
-    }.bind(this),1000*60);
-   }
-  };
+      }.bind(this),1000*60);
+    },
 
+  switchToUserList: function(data) {
+     this.switchTo('userlist',
+      {
+        activeUsers: data.active_ids
+      });
+    },
+
+  switchToError: function() {
+     this.switchTo('error');
+    }
+
+  };
 }());
