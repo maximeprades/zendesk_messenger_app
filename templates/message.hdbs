@@ -6,6 +6,6 @@
   </p>
 
   <p class="messageBody">
-    {{{message}}}
+    {{{text}}}
   </p>
 </li>

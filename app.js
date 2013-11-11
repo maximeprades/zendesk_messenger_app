@@ -30,7 +30,7 @@
               from: this.currentUser().name(),
               to: to
             },
-            app_id: 0
+            app_id: 19859
           }
         };
       }
@@ -76,9 +76,9 @@
     },
 
     onIncomingMessage: function(data) {
-      if (data.to === this.currentUser().id()) {
+      if ((data.to * 1) === this.currentUser().id()) {
         this.popover();
-        _.defer(this.drawMessage.bind(this), data);
+        _.defer(this.drawMessage.bind(this, data));
       }
     },
 
