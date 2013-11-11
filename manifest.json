@@ -11,7 +11,7 @@
   "frameworkVersion": "1.0",
   "parameters": [
     {
-      "name": "messenger_token",
+      "name": "messenger_secret",
       "type": "text"
     }
   ]
