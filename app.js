@@ -70,7 +70,7 @@
     sendMessage: function() {
       var area = this.$('.message');
       var message = area.val();
-      var to = this.$('.activeUsers').val();
+      var to = this.$('.targetUser').val();
       this.ajax('sendMessage', to, message);
       area.val('');
     },
