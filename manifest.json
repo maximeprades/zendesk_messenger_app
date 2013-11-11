@@ -1,0 +1,18 @@
+{
+  "name": "Zendesk Messenger",
+  "author": {
+    "name": "Zendesk",
+    "email": "support@zendesk.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": "top_bar",
+  "version": "0.1",
+  "frameworkVersion": "1.0",
+  "parameters": [
+    {
+      "name": "messenger_token",
+      "type": "text"
+    }
+  ]
+}
